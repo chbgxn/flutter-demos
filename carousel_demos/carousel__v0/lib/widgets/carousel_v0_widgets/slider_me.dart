@@ -1,4 +1,4 @@
-// Author: @DevGalaxyCh
+// Author: @chbgxn
 import 'package:flutter/material.dart';
 
 class SliderMe extends StatelessWidget {
