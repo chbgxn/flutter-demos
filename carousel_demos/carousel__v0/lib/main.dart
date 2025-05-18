@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text("轮播图_V0_Author: @DevGalaxyCh")),
+        appBar: AppBar(title: Text("轮播图_V0_Author: @chbgxn")),
         body: CarouselV0(),
       ),
     );
