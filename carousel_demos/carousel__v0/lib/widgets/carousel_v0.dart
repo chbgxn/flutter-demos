@@ -1,4 +1,4 @@
-// Author: @DevGalaxyCh
+// Author: @chbgxn
 import 'package:flutter/material.dart';
 import 'carousel_v0_widgets/carousel_container.dart';
 
