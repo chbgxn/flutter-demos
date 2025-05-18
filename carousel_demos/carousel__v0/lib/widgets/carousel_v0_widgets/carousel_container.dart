@@ -1,4 +1,4 @@
-// Author: @DevGalaxyCh
+// Author: @chbgxn
 import 'package:flutter/material.dart';
 import 'slider_me.dart';
 
