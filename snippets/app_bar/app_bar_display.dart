@@ -55,7 +55,7 @@ class _AppBarDisplayState extends State<AppBarDisplay> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _show?AppBar(title: Text('个人中心')):null,
+      appBar: _show?AppBar(title: const Text('个人中心')):null,
       body: SafeArea(
         child: ListView.builder(
           controller: _scrollController,
@@ -65,7 +65,7 @@ class _AppBarDisplayState extends State<AppBarDisplay> {
             return Container( 
               margin: EdgeInsets.symmetric(horizontal: 8),
               color: Colors.green,
-              child: const Text('$index'),
+              child: Text(index.toString()),
             );
           },
         ),
