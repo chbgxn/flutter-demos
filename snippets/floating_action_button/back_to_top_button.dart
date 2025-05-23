@@ -57,7 +57,7 @@ class _BackToTopButtonState extends State<BackToTopButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("长列表")),
+      appBar: AppBar(title: const Text('回到顶部')),
       body: ListView.builder(
         itemCount: 50,
         itemExtent: 50,
@@ -66,7 +66,7 @@ class _BackToTopButtonState extends State<BackToTopButton> {
           return Container(
             margin: EdgeInsets.only(bottom: 8),
             color: Colors.blue,
-            child: ListTile(title: Text("$index")),
+            child: ListTile(title: Text(index.toString())),
           );
         },
       ),
