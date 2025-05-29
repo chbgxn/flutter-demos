@@ -7,7 +7,7 @@ achieving information verification and keyboard interaction.
 - The database uses CloudBase's NoSQL to store user data.
 - Implemented information prompts and login redirection.
 
-- [CN] 实现一个基本的登录界面
+- [ZH] 实现一个基本的登录界面
 - 介绍：
 - 前端使用Flutter的Form处理输入和交互，实现信息验证和键盘交互。
 - 通过Dio调用CloudBase的Node.js云函数。
@@ -36,7 +36,7 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
   final FocusNode _upwdFocusNode = FocusNode();
 
   final _path = 'https://example.com'; //The domain name corresponding to the operation in Cloudbase 
-                                      //[CN]Cloudbase中的对应操作的域名
+                                      //[ZH]Cloudbase中的对应操作的域名
 
   Future<void> _fecthData() async{
     try{
@@ -54,7 +54,8 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
           if(mounted){
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context)=> SuccessfulPage()) //Information is correct, jump to homepage [CN]信息无误跳转到主页
+              MaterialPageRoute(builder: (context)=> SuccessfulPage()) //Information is correct, jump to homepage 
+                                                                       //[ZH]信息无误跳转到主页
             );
           }
         }
@@ -110,7 +111,7 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
                 }
                 return null;
               },
-              textInputAction: TextInputAction.next, //keyboard interaction [CN]键盘交互
+              textInputAction: TextInputAction.next, //keyboard interaction [ZH]键盘交互
               onFieldSubmitted: (_) => FocusScope.of(context).requestFocus(_upwdFocusNode),
             ),
 
