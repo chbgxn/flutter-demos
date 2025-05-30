@@ -29,17 +29,17 @@ class _AppBarDisplayState extends State<AppBarDisplay> {
   @override
   void initState() {
     super.initState();
-    _scrollController.addListener(listenOffset);
+    _scrollController.addListener(_listenOffset);
   }
 
   @override
   void dispose() {
-    _scrollController.removeListener(listenOffset);
+    _scrollController.removeListener(_listenOffset);
     _scrollController.dispose();
     super.dispose();
   }
 
-  void listenOffset(){
+  void _listenOffset(){
     if(_scrollController.offset >=100){
       setState(() {
         _show = true;
