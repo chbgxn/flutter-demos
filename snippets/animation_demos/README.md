@@ -5,4 +5,4 @@
 ### Contents
 | File           |  Description       |
 |---------------|----------------------|
-| app_bar_display.dart | Control the Display and Disappearance of AppBar     |
+|mplicit_animation/switch_opacity_button.dart | Switch Opacity     |
