@@ -3,7 +3,7 @@
 - Introductions:
 - Created a progress bar that continuously loops from start to finish.
 
-- [CN] 进度条加载的动画
+- [ZH] 进度条加载的动画
 - 介绍：
 - 做了一个从开始到结束不断循环的条形进度条。
 
