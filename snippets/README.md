@@ -12,3 +12,5 @@
 | app_bar | Store functional codes related to the AppBar       | 
 | carousel |Store functional codes related to the Carousel      |
 | floating_action_button | Store functional codes related to the FloatingActionButton      |
+| form |Store functional codes related to the Form      |
+| animation |Store functional codes related to the Animation      |
