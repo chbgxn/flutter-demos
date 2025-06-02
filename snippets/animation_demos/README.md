@@ -5,4 +5,4 @@
 ### Contents
 | File           |  Description       |
 |---------------|----------------------|
-|implicit_animation/switch_opacity_button.dart | Switch Opacity     |
+|implicit/switch_opacity_button.dart | Switch Opacity     |
