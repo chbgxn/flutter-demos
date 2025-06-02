@@ -1,4 +1,4 @@
-## 动画demo代码片段集
+## 动画代码片段集
 
 [![English Docs](https://img.shields.io/badge/Docs-English-green?style=flat-square)](README.md)
 
