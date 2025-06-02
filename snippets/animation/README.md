@@ -6,4 +6,4 @@
 | File           |  Description       |
 |---------------|----------------------|
 | implicit/switch_opacity_button.dart | Switch Opacity     |
-| explicit/progress_animation.dart.dart | Animation loaded on progress bar     |
+| explicit/progress_animation.dart | Animation loaded on progress bar     |
