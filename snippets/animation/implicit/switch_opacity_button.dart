@@ -3,7 +3,7 @@
 - Introductions:
 - An implicit animation component AnimatedOpacity was used to switch opacity.
 
-- [CN] 切换不透明度
+- [ZH] 切换不透明度
 - 介绍：
 - 使用了隐式动画组件 AnimatedOpacity 实现切换不透明度。
 
