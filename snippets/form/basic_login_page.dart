@@ -44,8 +44,8 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
       Response response = await dio.get(
         _path,
         queryParameters: {
-          'uid': _uidController.text.trim(),
-          'upwd': _upwdController.text.trim(),
+          'id': _uidController.text.trim(),
+          'pwd': _upwdController.text.trim(),
         }
       );
       if(response.statusCode == 200){
@@ -71,8 +71,7 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
         } 
     }
     _uidController.clear();
-    _upwdController.clear();
-    
+    _upwdController.clear();    
   }
 
   @override
@@ -93,6 +92,7 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
         key: _fromKey,
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          spacing: 16,
           children: [
             TextFormField(
               controller: _uidController,
@@ -115,8 +115,6 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
               onFieldSubmitted: (_) => FocusScope.of(context).requestFocus(_upwdFocusNode),
             ),
 
-            SizedBox(height: 16),
-
             TextFormField(
               controller: _upwdController,
               focusNode: _upwdFocusNode,
@@ -138,8 +136,6 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
               textInputAction: TextInputAction.done,
               onFieldSubmitted: (_) => _upwdFocusNode.unfocus(),
             ),
-
-            SizedBox(height: 16),
 
             FormField(
               autovalidateMode: AutovalidateMode.onUserInteraction,
@@ -164,8 +160,6 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
                 );
               }
             ),
-
-            SizedBox(height: 16),
             
             OutlinedButton(
               onPressed: (){
@@ -173,7 +167,7 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
                   _fecthData(); 
                 }
               }, 
-              child: Text('登录')
+              child: const Text('登录')
             )
           ],
         ),
