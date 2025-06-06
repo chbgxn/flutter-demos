@@ -25,7 +25,6 @@ class BasicCarousel extends StatefulWidget {
 
 class _BasicCarouselState extends State<BasicCarousel> {
   final PageController _pageController = PageController();
-  int _currentIndex = 0;
 
   final List<String> imgs = [
     'assets/images/1.jpeg',
@@ -46,14 +45,9 @@ class _BasicCarouselState extends State<BasicCarousel> {
     return SizedBox(
       height: 200,
       child: PageView.builder(
-        itemCount: 5,
+        itemCount: imgs.length,
         controller: _pageController,
-        onPageChanged: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-        itemBuilder: (context, index) => CarouselContent(img: imgs[_currentIndex],currentIndex: _currentIndex)
+        itemBuilder: (context, index) => CarouselContent(img: imgs[index], currentIndex: index)
       )
     );  
   }
@@ -63,7 +57,7 @@ class CarouselContent extends StatelessWidget {
   final String img;
   final int currentIndex;
   
-  const CarouselContent({required this.img,required this.currentIndex,super.key});
+  const CarouselContent({required this.img, required this.currentIndex, super.key});
 
   @override
   Widget build(BuildContext context) {
