@@ -31,8 +31,7 @@ class _StandardCarouselState extends State<StandardCarousel> {
   Timer? _autoPlayTimer;
   int _currentIndex = 0;
   int _actualIndex = 0;
-  final int _totIndex = 5;
-
+  
   final List<String> imgs = [
     'assets/images/1.jpeg',
     'assets/images/2.jpeg',
@@ -40,6 +39,7 @@ class _StandardCarouselState extends State<StandardCarousel> {
     'assets/images/4.jpeg',
     'assets/images/5.jpeg'
   ];
+  final int _totIndex = imgs.length;
 
   @override
   void initState() {
@@ -77,7 +77,7 @@ class _StandardCarouselState extends State<StandardCarousel> {
         controller: _pageController,
         itemBuilder: (context, index){
           _actualIndex = index % _totIndex;
-          return CarouselContent(img: imgs[_actualIndex],currentIndex: _actualIndex);
+          return CarouselContent(img: imgs[_actualIndex], currentIndex: _actualIndex);
         }
       )
     );  
@@ -88,7 +88,7 @@ class CarouselContent extends StatelessWidget {
   final String img;
   final int currentIndex;
   
-  const CarouselContent({required this.img,required this.currentIndex,super.key});
+  const CarouselContent({required this.img, required this.currentIndex, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -111,7 +111,7 @@ class CarouselContent extends StatelessWidget {
 
 class CircularIndicator extends StatelessWidget {
   final int currentIndex;
-  const CircularIndicator({required this.currentIndex,super.key});
+  const CircularIndicator({required this.currentIndex, super.key});
 
   @override
   Widget build(BuildContext context) {
