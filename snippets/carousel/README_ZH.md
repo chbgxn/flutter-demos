@@ -6,4 +6,4 @@
 | 文件          |  描述      |
 |---------------|----------------------|
 | basic_carousel.dart | 基本轮播图的实现     |
-| auto_play_carousel.dart | 自动播放轮播图的实现     |
+| standard_carousel.dart | 自动播放轮播图的实现     |
