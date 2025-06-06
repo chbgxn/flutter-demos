@@ -6,4 +6,4 @@
 | File           |  Description       |
 |---------------|----------------------|
 | basic_carousel.dart | Implementation of Basic Carousel     |
-| auto_play_carousel.dart | Implementation of AutoPlay Carousel    |
+| standard_carousel.dart | Implementation of AutoPlay Carousel    |
