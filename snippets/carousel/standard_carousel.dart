@@ -1,3 +1,21 @@
+/*
+- [EN] Implementation of AutoPlay Carousel
+- Introductions:
+- Implement a carousel by PageView
+- Add circular indicator
+- AutoPlay ✅
+- Loop Playback ✅
+
+- [CN] 自动播放轮播图的实现
+- 介绍：
+- 使用PageView实现一个轮播图
+- 增加圆形指示器
+- 自动播放 ✅
+- 循环播放 ✅
+
+- Author: @chbgxn
+*/
+
 import 'dart:async';
 import 'package:flutter/material.dart';
 
