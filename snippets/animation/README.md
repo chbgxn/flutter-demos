@@ -8,4 +8,4 @@
 | implicit/switch_opacity_button.dart | Switch Opacity     |
 | explicit/progress_animation.dart | Animation loaded on progress bar     |
 | explicit/breathable_button.dart | Breathable Button     |
-
+| explicit/expandable_menu .dart | Expandable Menu      |
