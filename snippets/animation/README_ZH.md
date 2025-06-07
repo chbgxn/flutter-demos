@@ -8,3 +8,4 @@
 | implicit/switch_opacity_button.dart | 切换不透明度     |
 | explicit/progress_animation.dart | 进度条加载的动画     |
 | explicit/breathable_button.dart | 呼吸按钮     |
+| explicit/expandable_menu .dart | 伸缩菜单      |
