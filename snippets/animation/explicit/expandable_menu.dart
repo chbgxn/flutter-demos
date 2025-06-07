@@ -1,3 +1,15 @@
+/*
+- [EN] Expandable Menu
+- Introductions:
+- This code shows the animation of opening and closing the menu after clicking the button.
+
+- [ZH] 伸缩菜单
+- 介绍：
+- 这段代码展现了点击按钮后，打开与关闭菜单的动画。
+
+- Author: @chbgxn
+*/
+
 import 'package:flutter/material.dart';
 
 class ExpandableMenu extends StatefulWidget {
