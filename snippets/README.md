@@ -10,8 +10,6 @@
  Folder          | Description      |
 |---------------|----------------------|
 | carousel |Store functional codes related to the Carousel      |
-| floating_action_button | Store functional codes related to the FloatingActionButton      |
-| form |Store functional codes related to the Form      |
 | animation |Store functional codes related to the Animation      |
 
 --
@@ -20,4 +18,5 @@
 |---------------|----------------------|
 | app_bar_display.dart | Control the Display and Disappearance of AppBar     |
 | back_to_top_button.dart	| Control the Display And Disappearance of the "back_to_top" button |
+| basic_login_page.dart | Implement A Basic Login Page     |
 | web_socket_naive_demo | A Simple WebSocket Echo Test      |
