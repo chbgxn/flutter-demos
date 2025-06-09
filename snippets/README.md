@@ -9,7 +9,6 @@
 ### Contents
  Folder          | Description      |
 |---------------|----------------------|
-| app_bar | Store functional codes related to the AppBar       | 
 | carousel |Store functional codes related to the Carousel      |
 | floating_action_button | Store functional codes related to the FloatingActionButton      |
 | form |Store functional codes related to the Form      |
@@ -19,5 +18,6 @@
 
 | 文件          | 描述      |
 |---------------|----------------------|
+| app_bar_display.dart | Control the Display and Disappearance of AppBar     |
 | back_to_top_button.dart	| Control the Display And Disappearance of the "back_to_top" button |
 | web_socket_naive_demo | A Simple WebSocket Echo Test      |
