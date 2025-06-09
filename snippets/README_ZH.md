@@ -9,9 +9,7 @@
 ### 内容
 | 文件夹          | 描述      |
 |---------------|----------------------|
-| app_bar | 存放AppBar相关的代码       | 
 | carousel | 存放轮播图相关的代码      |
-| floating_action_button | 存放悬浮按钮相关的代码      |
 | form | 存放表单相关的功能代码      |
 | animation | 存放动画相关的功能代码      |
 | animation | 存放动画相关的功能代码      |
@@ -20,6 +18,7 @@
 
 | 文件          | 描述      |
 |---------------|----------------------|
+| app_bar_display.dart|	控制AppBar的显示与消失|
 | back_to_top_button.dart	| 控制“回到顶部”按钮的显示与消失 |
 | web_socket_naive_demo | 一个简单的 WebSocket Echo 测试      |
 
