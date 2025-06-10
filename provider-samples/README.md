@@ -11,7 +11,7 @@ Continuously updating...
    - Basic `Provider` usage example  
    - Demonstrates how to manage a simple counter state  
 
-2. **Shopping Cart**  
+2. **Proxy Provider Cart**  
    - Implements a multi-user shopping cart using `ProxyProvider`  
    - Supports user login, product addition, and cart cleanup upon logout  
 
