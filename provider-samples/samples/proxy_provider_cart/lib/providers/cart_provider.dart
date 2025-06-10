@@ -5,6 +5,8 @@ class CartProvider extends ChangeNotifier {
   User? user;
   final List<String> _items = [];
 
+  CartProvider({this.user});
+
   List<String>? get items => _items;
   
   void addItem(String item){
