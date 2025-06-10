@@ -3,20 +3,21 @@
 [![English Docs](https://img.shields.io/badge/Docs-English-green?style=flat-square)](README.md)
 
 本项目提供了一系列使用 **Provider** 状态管理库的 Flutter 示例。
+持续更新中......
 
 ### 包含的示例  
 
 1. **Counter App**  
-   - 基础 'Provider' 使用示例  
+   - 基础 `Provider` 使用示例  
    - 演示如何管理简单的计数器状态  
 
 2. **Shopping Cart**  
-   - 使用 'ProxyProvider' 实现多用户购物车  
+   - 使用 `ProxyProvider` 实现多用户购物车  
    - 支持用户登录、商品添加和退出清理  
 
 ### 依赖说明  
 所有示例均基于：  
-- 'provider'（根据示例选择）  
+- `provider`
 - 其他必要依赖（如 `http` 用于网络请求示例）  
 
 ## 🎯 学习目标  
@@ -26,6 +27,4 @@
 
 ## 📚 文档参考  
 - [Provider 官方文档](https://pub.dev/packages/provider)  
-- [Flutter 状态管理推荐](https://docs.flutter.dev/data-and-backend/state-mgmt/options)  
-
-可根据实际项目调整内容，例如增加 GIF 演示、代码片段或更详细的架构图。
+- [Flutter 状态管理推荐](https://docs.flutter.dev/data-and-backend/state-mgmt/options)
