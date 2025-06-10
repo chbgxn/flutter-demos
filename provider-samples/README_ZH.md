@@ -11,7 +11,7 @@
    - 基础 `Provider` 使用示例  
    - 演示如何管理简单的计数器状态  
 
-2. **Shopping Cart**  
+2. **Proxy Provider Cart**  
    - 使用 `ProxyProvider` 实现多用户购物车  
    - 支持用户登录、商品添加和退出清理  
 
