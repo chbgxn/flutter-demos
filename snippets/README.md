@@ -17,6 +17,7 @@
 
 | 文件          | 描述      |
 |---------------|----------------------|
+| custom_paint/basic_shapes_painter.dart|	Use CustomPaint to Draw Basic Graphics|
 | app_bar_display.dart | Control the Display and Disappearance of AppBar     |
 | back_to_top_button.dart	| Control the Display And Disappearance of the "back_to_top" button |
 | basic_login_page.dart | Implement A Basic Login Page     |
