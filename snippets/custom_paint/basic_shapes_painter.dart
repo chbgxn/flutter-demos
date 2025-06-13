@@ -1,5 +1,5 @@
 /*
-- [EN] Control the Display and Disappearance of AppBar
+- [EN] Use CustomPaint to Draw Basic Graphics
 - Introductions:
 - use CustomPaint to draw basic graphics, including rectangle, rounded rectangle, 
 circle, ellipse, point, line, path, and text.
