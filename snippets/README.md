@@ -9,8 +9,9 @@
 ### Contents
  Folder          | Description      |
 |---------------|----------------------|
-| carousel |Store functional codes related to the Carousel      |
-| animation |Store functional codes related to the Animation      |
+| carousel |Store the functional codes related to the Carousel      |
+| animation |Store the functional codes related to the Animation      |
+| custom_paint | Store the functional code related to custom drawing      |
 
 --
 
