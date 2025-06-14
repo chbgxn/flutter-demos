@@ -27,6 +27,6 @@
 --
 | 文件          | 展示      |
 |---------------|----------------------|
-| custom_paint/draw_check_mark.dart|	<img src="https://github.com/chbgxn/flutter-demos/blob/main/snippets/custom_paint/draw_check_mark.gif", width="50", height="50">|
+| custom_paint/draw_check_mark.dart|	<img src="https://github.com/chbgxn/flutter-demos/blob/main/snippets/custom_paint/draw_check_mark.gif" width="50" height="50">|
 
 
