@@ -40,14 +40,11 @@ class _DrawCheckMarkState extends State<DrawCheckMark> with SingleTickerProvider
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('绘制对号')),
+      appBar: AppBar(title: Text('打勾动画')),
       body: Center(
-        child:GestureDetector(
-          onTap: () => { },
-          child: CustomPaint(
-            painter: AnimatedPathPainter(animation: _animationController),
-            size: const Size(200, 200),
-          ),
+        child: CustomPaint(
+          painter: AnimatedPathPainter(animation: _animationController),
+          size: const Size(200, 200),  
         ) 
       )
     );
