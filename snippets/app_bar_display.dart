@@ -10,7 +10,7 @@ When greater than or equal to the set value, AppBar will display.
 - 设置了一个AppBar，当滚动总偏移量小于设定值时，AppBar不会显示；大于等于设定值时，AppBar会显示。
 - 参考了淘宝、拼多多在个人主页对AppBar的处理，并实现。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
