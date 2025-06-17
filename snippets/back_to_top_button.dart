@@ -12,7 +12,7 @@ When it is greater than or equal to the set value, the button will be displayed.
 - 设置了一个“回到顶部”按钮，点击可以回到顶部。
 - 当滚动总偏移量小于设定值时，“回到顶部”按钮不会显示；大于等于设定值时，按钮会显示。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
