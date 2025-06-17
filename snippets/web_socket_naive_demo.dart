@@ -12,7 +12,7 @@ and the server returns the original text.
 - 可以验证 WebSocket 的双向通信是否正常。
 - ✅ 增加了断线后自动重连的功能。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'dart:async';
