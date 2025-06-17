@@ -14,7 +14,7 @@ achieving information verification and keyboard interaction.
 - 数据库选用了CloudBase的NoSQL存储用户数据。
 - 实现了信息提示，登录跳转。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
