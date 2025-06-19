@@ -7,7 +7,7 @@
 - 介绍：
 - 一个简单的Hero动画，用于个人学习。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
