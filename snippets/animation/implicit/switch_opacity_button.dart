@@ -7,7 +7,7 @@
 - 介绍：
 - 使用了隐式动画组件 AnimatedOpacity 实现切换不透明度。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
