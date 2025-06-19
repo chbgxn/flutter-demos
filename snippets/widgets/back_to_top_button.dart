@@ -8,7 +8,7 @@ When it is greater than or equal to the set value, the button will be displayed.
 
 - [CN] 控制“回到顶部”按钮的显示与消失
 - 介绍:
-- 使用ListView.builder()和itemExtent属性提升列表性能。
+- 使用 ListView.builder() 和 itemExtent 属性提升列表性能。
 - 设置了一个“回到顶部”按钮，点击可以回到顶部。
 - 当滚动总偏移量小于设定值时，“回到顶部”按钮不会显示；大于等于设定值时，按钮会显示。
 
