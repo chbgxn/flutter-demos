@@ -11,7 +11,7 @@
 - 增加圆形指示器
 - 自动播放 ❌
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
