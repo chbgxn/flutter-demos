@@ -7,7 +7,7 @@
 - 介绍：
 - 做了一个从开始到结束不断循环的条形进度条。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
