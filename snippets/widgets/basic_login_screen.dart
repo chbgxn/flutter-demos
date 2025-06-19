@@ -1,17 +1,17 @@
 /*
-- [EN] Implement A Basic Login Page
+- [EN] Implement A Basic Login Interface
 - Introductions:
-- The front-end uses Flutter's Form to process input and interaction,
-achieving information verification and keyboard interaction.
-- Call CloudBase's Node.js cloud function through Dio.
+- The front-end uses Flutter's Form to process input and interaction, achieving information verification 
+and keyboard interaction.
+- Use Dio to call the Node.js cloud function written by myself in Tencent CloudBase.
 - The database uses CloudBase's NoSQL to store user data.
-- Implemented information prompts and login redirection.
+- Implemented information prompts and login jumps.
 
 - [ZH] 实现一个基本的登录界面
 - 介绍：
-- 前端使用Flutter的Form处理输入和交互，实现信息验证和键盘交互。
-- 通过Dio调用CloudBase的Node.js云函数。
-- 数据库选用了CloudBase的NoSQL存储用户数据。
+- 前端使用 Flutter 的 Form 处理输入和交互，实现信息验证和键盘交互。
+- 通过 Dio 调用腾讯 CloudBase 中自己编写的 Node.js 云函数。
+- 数据库选用了 CloudBase 的 NoSQL 存储用户数据。
 - 实现了信息提示，登录跳转。
 
 - Author: chbgxn
@@ -19,33 +19,33 @@ achieving information verification and keyboard interaction.
 
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
-import 'package:today_news_app/successful_page.dart';
+import 'package:login_demo/successful_screen.dart';
 
-class BasicLoginPage extends StatefulWidget {
-  const BasicLoginPage({super.key});
+class BasicLoginScreen extends StatefulWidget {
+  const BasicLoginScreen({super.key});
 
   @override
-  State<BasicLoginPage> createState() => _BasicLoginPageState();
+  State<BasicLoginScreen> createState() => _BasicLoginScreenState();
 }
 
-class _BasicLoginPageState extends State<BasicLoginPage> {
+class _BasicLoginScreenState extends State<BasicLoginScreen> {
   final _fromKey = GlobalKey<FormState>();
-  final TextEditingController _uidController = TextEditingController();
-  final TextEditingController _upwdController = TextEditingController();
-  final FocusNode _uidFocusNode = FocusNode();
-  final FocusNode _upwdFocusNode = FocusNode();
+  final TextEditingController _idController = TextEditingController();
+  final TextEditingController _pwdController = TextEditingController();
+  final FocusNode _idFocusNode = FocusNode();
+  final FocusNode _pwdFocusNode = FocusNode();
 
   final _path = 'https://example.com'; //The domain name corresponding to the operation in Cloudbase 
                                       //[ZH]Cloudbase中的对应操作的域名
 
-  Future<void> _fecthData() async{
+  Future<void> _fetchData() async{
     try{
       Dio dio = Dio();
       Response response = await dio.get(
         _path,
         queryParameters: {
-          'id': _uidController.text.trim(),
-          'pwd': _upwdController.text.trim(),
+          'id': _idController.text.trim(),
+          'pwd': _pwdController.text.trim(),
         }
       );
       if(response.statusCode == 200){
@@ -54,7 +54,7 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
           if(mounted){
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context)=> SuccessfulPage()) //Information is correct, jump to homepage 
+              MaterialPageRoute(builder: (_) => SuccessfulScreen()) //Information is correct, jump to homepage 
                                                                        //[ZH]信息无误跳转到主页
             );
           }
@@ -70,16 +70,16 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: const Text('发生错误！')));
         } 
     }
-    _uidController.clear();
-    _upwdController.clear();    
+    _idController.clear();
+    _pwdController.clear();    
   }
 
   @override
   void dispose() {
-    _uidController.dispose();
-    _upwdController.dispose();
-    _uidFocusNode.dispose();
-    _upwdFocusNode.dispose();
+    _idController.dispose();
+    _pwdController.dispose();
+    _idFocusNode.dispose();
+    _pwdFocusNode.dispose();
     super.dispose();
   }
 
@@ -95,11 +95,11 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
           spacing: 16,
           children: [
             TextFormField(
-              controller: _uidController,
-              focusNode: _uidFocusNode,
-              autovalidateMode: _uidFocusNode.hasFocus?
-                AutovalidateMode.onUserInteraction:
-                AutovalidateMode.disabled,
+              controller: _idController,
+              focusNode: _idFocusNode,
+              autovalidateMode: _idFocusNode.hasFocus
+                ? AutovalidateMode.onUserInteraction
+                : AutovalidateMode.disabled,
               decoration: InputDecoration(
                 label: Text('用户ID'),
                 prefix: Icon(Icons.people),
@@ -112,15 +112,15 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
                 return null;
               },
               textInputAction: TextInputAction.next, //keyboard interaction [ZH]键盘交互
-              onFieldSubmitted: (_) => FocusScope.of(context).requestFocus(_upwdFocusNode),
+              onFieldSubmitted: (_) => FocusScope.of(context).requestFocus(_pwdFocusNode),
             ),
 
             TextFormField(
-              controller: _upwdController,
-              focusNode: _upwdFocusNode,
-              autovalidateMode: _upwdFocusNode.hasFocus?
-                AutovalidateMode.onUserInteraction:
-                AutovalidateMode.disabled,
+              controller: _pwdController,
+              focusNode: _pwdFocusNode,
+              autovalidateMode: _pwdFocusNode.hasFocus
+                ? AutovalidateMode.onUserInteraction
+                : AutovalidateMode.disabled,
               decoration: InputDecoration(
                 label: Text('密码'),
                 prefix: Icon(Icons.lock),
@@ -134,7 +134,7 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
                 return null;
               },
               textInputAction: TextInputAction.done,
-              onFieldSubmitted: (_) => _upwdFocusNode.unfocus(),
+              onFieldSubmitted: (_) => _pwdFocusNode.unfocus(),
             ),
 
             FormField(
@@ -155,8 +155,9 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
                   onChanged: (bool? value){
                     state.didChange(value);
                   },
-                  subtitle: state.hasError?
-                    Text(state.errorText!, style: TextStyle(color: Colors.red)):null,
+                  subtitle: state.hasError
+                    ? Text(state.errorText!, style: TextStyle(color: Colors.red))
+                    : null,
                 );
               }
             ),
@@ -164,7 +165,7 @@ class _BasicLoginPageState extends State<BasicLoginPage> {
             OutlinedButton(
               onPressed: (){
                 if(_fromKey.currentState!.validate()){  
-                  _fecthData(); 
+                  _fetchData(); 
                 }
               }, 
               child: const Text('登录')
