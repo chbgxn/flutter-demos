@@ -7,7 +7,7 @@
 - 介绍：
 - 这段代码展现了点击按钮后，打开与关闭菜单的动画。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
