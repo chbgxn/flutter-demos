@@ -8,7 +8,7 @@ then decrease to 0.5 times, and so on, making it looks like breathing.
 - 介绍：
 - 一个正方形可以自动将其大小从0.5倍增加到1.5倍，然后减小到0.5倍，如此循环反复，看起来就像在呼吸。
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'package:flutter/material.dart';
