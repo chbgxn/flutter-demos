@@ -13,7 +13,7 @@
 - 自动播放 ✅
 - 循环播放 ✅
 
-- Author: @chbgxn
+- Author: chbgxn
 */
 
 import 'dart:async';
