@@ -9,7 +9,7 @@ class CounterNotifier extends StateNotifier<int> {
   void zeroClearing() => state = 0;
 }
 
-final counterProvider = StateNotifierProvider<CounterNotifier, int>((ref) => Counter());
+final counterProvider = StateNotifierProvider<CounterNotifier, int>((ref) => CounterNotifier());
 
 class AnotherCounterDemo extends ConsumerWidget{
   const AnotherCounterDemo({super.key});
