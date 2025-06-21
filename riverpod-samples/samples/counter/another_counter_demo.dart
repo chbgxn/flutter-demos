@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class Counter extends StateNotifier<int> {
-  Counter(): super(0);
+class CounterNotifier extends StateNotifier<int> {
+  CounterNotifier(): super(0);
 
   void increasement() => state++;
   void decreasement()=> state--;
   void zeroClearing() => state = 0;
 }
 
-final counterProvider = StateNotifierProvider<Counter, int>((ref) => Counter());
+final counterProvider = StateNotifierProvider<CounterNotifier, int>((ref) => Counter());
 
 class AnotherCounterDemo extends ConsumerWidget{
   const AnotherCounterDemo({super.key});
