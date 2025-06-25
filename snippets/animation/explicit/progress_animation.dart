@@ -1,5 +1,5 @@
 /*
-- [EN] Animation loaded on progress bar
+- [EN] Animation Loaded on Progress Bar
 - Introductions:
 - Created a progress bar that continuously loops from start to finish.
 
