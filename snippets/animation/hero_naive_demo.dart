@@ -1,9 +1,9 @@
 /*
-- [EN] Learn how to use Hero animation
+- [EN] Hero Animation
 - Introductions:
 - An naive Hero animation for personal learning.
 
-- [ZH] 学习如何使用 Hero 动画
+- [ZH] Hero 动画
 - 介绍：
 - 一个简单的 Hero 动画，用于个人学习。
 
